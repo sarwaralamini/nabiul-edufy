@@ -38,11 +38,10 @@ Auth::routes([
 ]);
 
 Route::group(['prefix' => 'myaccount', 'as' => 'student.'], function(){
-    Route::get('dashboard', function(){
-        return 'Student Dashboard';
-    })->name('dashboard');
     Route::middleware('auth')->group(function(){
-       
+        Route::get('dashboard', function(){
+            return 'Student Dashboard';
+        })->name('dashboard');
     });
 });
 
@@ -55,7 +54,7 @@ Route::group(['prefix' => 'systemcontrol', 'as' => 'admin.'], function(){
         Route::get('form', function(){
             return view('backend.form');
         })->name('form');
-       
+
 
         Route::get('dashboard', [BackendController::class, 'dashboard'])->name('dashboard');
     });

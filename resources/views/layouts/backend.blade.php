@@ -14,8 +14,7 @@
         <!-- Stack style -->
         @stack('css')
         <!-- Custom style -->
-        <link rel="stylesheet" href="{{ asset('dist/backend/css/style.css') }}">
-
+        <link rel="stylesheet" href="{{ asset('dist/backend/css/style_v2.css') }}">
     </head>
     <body class="hold-transition sidebar-mini">
         <!-- Site wrapper -->
@@ -37,7 +36,7 @@
                 <div class="float-right d-none d-sm-block">
                 <b>Version</b> 1.0.0
                 </div>
-                <strong>Copyright &copy; {{ date('Y') }} <a href="https://buliabazarcollege.edu.bd">বুলিয়া বাজার কলেজ</a>.</strong> All rights reserved.
+                <strong>Developed By - <a href="https://techathome.com.bd/" target="_new">Tech@Home</a>.</strong> Edufy {{ date('Y') }} &copy; All rights reserved.
             </footer>
 
             <!-- Control Sidebar -->
